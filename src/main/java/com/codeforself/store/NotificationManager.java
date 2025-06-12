@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class NotificationManager {
-    private NotificationService notificationService;
+    private final NotificationService notificationService;
     public NotificationManager(NotificationService service){
         this.notificationService = service;
     }
